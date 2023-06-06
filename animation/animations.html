@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Animations</title>
+</head>
+<body>
+	
+	<div></div>
+
+	<style>
+
+		div {
+			animation: transition 3s linear infinite;
+			border: 10px solid #000;
+			border-radius: 10px;
+			height: 50px;
+			margin: 150px;
+			width: 100px;
+		}
+
+		@keyframes transition {
+			0% {
+				background-color: transparent;
+				height: 50px;
+			}
+			25% {
+				background-color: yellow;
+				border-width: 20px;
+				height: 100px;
+				transform: translate(100px, 0);
+			}
+			50% {
+				background-color: red;
+				border-width: 5px;
+				height: 150px;
+				transform: translate(100px, 350px);
+			}
+			75% {
+				background-color: red;
+				border-width: 25px;
+				height: 75px;
+				transform: translate(0, 350px);
+			}
+			100% {
+				background-color: transparent;
+				border-width: 10px;
+				height: 50px;
+				transform: translate(0, 0);
+			}
+		}
+	</style>
+
+</body>
+</html>
